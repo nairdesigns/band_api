@@ -1,4 +1,4 @@
 class MemberSerializer < ActiveModel::Serializer
   attributes :id, :name
-  has_many :members
+  belongs_to :band
 end
