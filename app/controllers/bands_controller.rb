@@ -5,7 +5,7 @@
   def index
     @bands = Band.all
 
-    render json: @bands
+    render json: @bands,  only: [:members,:name,:id]
   end
 
   # GET /bands/1
